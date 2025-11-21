@@ -10,8 +10,8 @@ export default function Projects() {
       title: "Portfolio Website",
       desc: "A modern, animated personal portfolio built with React and Tailwind.",
       tech: ["React", "Tailwind", "Framer Motion"],
-      github: "#",
-      live: "#",
+      github: "https://github.com/nezumi3218/Portfolio",
+      live: "https://portfolio-self-nu-20.vercel.app",
       img: project1,
     },
     {
