@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
+import project1 from "src/assets/project1.png";
+import project2 from "src/assets/project2.png";
 
 export default function Projects() {
   const projects = [
@@ -10,7 +12,7 @@ export default function Projects() {
       tech: ["React", "Tailwind", "Framer Motion"],
       github: "#",
       live: "#",
-      img: "src/assets/Opera Snapshot_2025-11-21_204159_localhost.png",
+      img: { project1 },
     },
     {
       title: "Blog Posting Website",
@@ -18,7 +20,7 @@ export default function Projects() {
       tech: ["React", "Tailwind CSS", "Appwrite"],
       github: "https://github.com/nezumi3218/ReactJs/tree/main/BlogPosting",
       live: "https://blog-posting-seven.vercel.app",
-      img: "src/assets/project2.png",
+      img: { project2 },
     },
   ];
 
