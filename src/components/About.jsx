@@ -15,9 +15,8 @@ export default function About() {
           className="col-span-1 flex flex-col items-center lg:items-start text-center lg:text-left"
         >
           <div className="w-48 h-48 rounded-2xl overflow-hidden shadow-2xl ring-1 ring-slate-200">
-            {/* Replace src with your picture */}
             <img
-              src="src\assets\about.jpg"
+              src="src/assets/about.jpg"
               alt="Portrait"
               className="w-full h-full object-cover"
             />
