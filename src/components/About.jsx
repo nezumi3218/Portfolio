@@ -2,6 +2,7 @@ import React from "react";
 import { Mail, Download, Linkedin, Github } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import aboutImage from "/src/assets/about.jpg";
 
 export default function About() {
   return (
@@ -16,7 +17,7 @@ export default function About() {
         >
           <div className="w-48 h-48 rounded-2xl overflow-hidden shadow-2xl ring-1 ring-slate-200">
             <img
-              src="src/assets/about.jpg"
+              src={aboutImage}
               alt="Portrait"
               className="w-full h-full object-cover"
             />
