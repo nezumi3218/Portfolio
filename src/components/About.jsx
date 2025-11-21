@@ -3,6 +3,7 @@ import { Mail, Download, Linkedin, Github } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import aboutImage from "/src/assets/about.jpg";
+import resume from "../assets/Resume_Muskan_Yadav.pdf";
 
 export default function About() {
   return (
@@ -38,7 +39,7 @@ export default function About() {
             </Link>
 
             <a
-              href="src\assets\Resume_Muskan_Yadav.pdf"
+              href={resume}
               download
               className="inline-flex items-center gap-2 px-4 py-2 border rounded-lg text-sm font-medium"
             >
