@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "src/assets/logo.png";
 
 function Navbar() {
   return (
     <nav className="flex items-center justify-between px-10 py-5 bg-rose-200 shadow-md rounded-4xl">
-      {/* LEFT: Logo */}
       <div className="flex items-center gap-3 cursor-pointer">
         <img
-          src="src\assets\ChatGPT Image Nov 18, 2025, 01_42_40 PM.png" // put your logo file here
+          src={logo} // put your logo file here
           alt="Logo"
           className="w-12 h-12 object-contain rounded-full"
         />

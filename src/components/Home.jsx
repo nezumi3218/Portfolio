@@ -1,4 +1,5 @@
 import React from "react";
+import frontPicture from "src/assets/front picture.jpg";
 
 function Home() {
   return (
@@ -9,7 +10,7 @@ function Home() {
 
       <div className="flex items-center justify-center px-10 py-20 animate-slideInLeft">
         <img
-          src="src\assets\front picture.jpg"
+          src={frontPicture}
           alt="Profile"
           className="w-72 h-72 rounded-3xl shadow-xl ring-2 ring-black-300 hover:scale-105 transition duration-500"
         />
