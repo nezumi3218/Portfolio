@@ -12,7 +12,7 @@ export default function Projects() {
       tech: ["React", "Tailwind", "Framer Motion"],
       github: "#",
       live: "#",
-      img: { project1 },
+      img: project1,
     },
     {
       title: "Blog Posting Website",
@@ -20,7 +20,7 @@ export default function Projects() {
       tech: ["React", "Tailwind CSS", "Appwrite"],
       github: "https://github.com/nezumi3218/ReactJs/tree/main/BlogPosting",
       live: "https://blog-posting-seven.vercel.app",
-      img: { project2 },
+      img: project2,
     },
   ];
 
