@@ -25,21 +25,26 @@ export default function Projects() {
   ];
 
   return (
-    <section className="max-w-6xl mx-auto p-6 sm:p-10 lg:p-16">
-      <h1 className="text-4xl font-extrabold text-center mb-10 bg-gradient-to-r from-rose-400 to-red-400 bg-clip-text text-transparent drop-shadow-lg tracking-wide">
+    <section className="max-w-6xl mx-auto p-4 sm:p-8 lg:p-16">
+      <h1
+        className="text-3xl sm:text-4xl font-extrabold text-center mb-8 
+      bg-gradient-to-r from-rose-400 to-red-400 bg-clip-text text-transparent 
+      drop-shadow-lg tracking-wide"
+      >
         Projects
       </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
         {projects.map((p, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: index * 0.1 }}
-            className="bg-white rounded-2xl shadow-md ring-1 ring-slate-100 overflow-hidden hover:shadow-xl transition-all"
+            className="bg-white rounded-2xl shadow-md ring-1 ring-slate-100 
+            overflow-hidden hover:shadow-xl transition-all"
           >
-            <div className="h-48 w-full overflow-hidden">
+            <div className="h-40 sm:h-48 w-full overflow-hidden">
               <img
                 src={p.img}
                 alt={p.title}
@@ -47,8 +52,9 @@ export default function Projects() {
               />
             </div>
 
-            <div className="p-5">
-              <h2 className="text-xl font-semibold">{p.title}</h2>
+            <div className="p-4 sm:p-5">
+              <h2 className="text-lg sm:text-xl font-semibold">{p.title}</h2>
+
               <p className="mt-2 text-slate-600 text-sm leading-relaxed">
                 {p.desc}
               </p>
@@ -57,23 +63,27 @@ export default function Projects() {
                 {p.tech.map((t, i) => (
                   <span
                     key={i}
-                    className="px-3 py-1 bg-slate-100 text-slate-700 text-xs rounded-full border"
+                    className="px-2 py-1 sm:px-3 sm:py-1 bg-slate-100 text-slate-700 
+                    text-xs rounded-full border"
                   >
                     {t}
                   </span>
                 ))}
               </div>
 
-              <div className="mt-5 flex items-center justify-between">
+              <div className="mt-4 sm:mt-5 flex items-center justify-between">
                 <a
                   href={p.github}
-                  className="flex items-center gap-1 text-sm font-medium hover:text-slate-900"
+                  className="flex items-center gap-1 text-sm font-medium 
+                  hover:text-slate-900"
                 >
                   <Github size={16} /> Code
                 </a>
+
                 <a
                   href={p.live}
-                  className="flex items-center gap-1 text-sm font-medium hover:text-slate-900"
+                  className="flex items-center gap-1 text-sm font-medium 
+                  hover:text-slate-900"
                 >
                   <ExternalLink size={16} /> Live demo
                 </a>
