@@ -3,7 +3,7 @@ import { Mail, Download, Linkedin, Github } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import aboutImage from "/src/assets/about.jpg";
-import resume from "../assets/Resume_Muskan_Yadav.pdf";
+import resume from "../assets/Muskan-Yadav.pdf";
 
 export default function About() {
   return (
