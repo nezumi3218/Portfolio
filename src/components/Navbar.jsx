@@ -9,16 +9,19 @@ function Navbar() {
     <nav className="px-6 py-4 bg-rose-200 shadow-md rounded-3xl m-4">
       <div className="flex items-center justify-between">
         {/* LEFT: Logo */}
-        <div className="flex items-center gap-3 cursor-pointer">
-          <img
-            src={logo}
-            alt="Logo"
-            className="w-10 h-10 object-contain rounded-full"
-          />
-          <h1 className="text-xl font-bold text-pink-700 tracking-wide">
-            Muskan
-          </h1>
-        </div>
+        <Link to="/">
+          <div className="flex items-center gap-3 cursor-pointer">
+            <img
+              src={logo}
+              alt="Logo"
+              className="w-10 h-10 object-contain rounded-full"
+            />
+
+            <h1 className="text-xl font-bold text-pink-700 tracking-wide">
+              Muskan
+            </h1>
+          </div>
+        </Link>
 
         {/* HAMBURGER (mobile only) */}
         <button
